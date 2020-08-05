@@ -1,0 +1,18 @@
+{
+  "name": "tfs-telegram-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env BOT_TOKEN=1229692163:AAE1KQgCPr1N5ryH3LPVtRaL_hMzVc2u_L8 nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "telegraf": "^3.38.0"
+  }
+}
