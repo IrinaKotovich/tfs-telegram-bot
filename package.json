@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env BOT_TOKEN=1229692163:AAE1KQgCPr1N5ryH3LPVtRaL_hMzVc2u_L8 node index.js",
-    "start": "node index.js"
+    "start": "cross-env BOT_TOKEN=1229692163:AAE1KQgCPr1N5ryH3LPVtRaL_hMzVc2u_L8 node index.js"
   },
   "author": "",
   "license": "ISC",
