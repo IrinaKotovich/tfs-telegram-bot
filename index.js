@@ -54,13 +54,13 @@ bot.on("text", async function(ctx) {
 });
 
 bot.telegram.setWebhook(
-  "https://tfs-observer-telegram-bot.herokuapp.com/telegraf/07e4f521f4a38e9e50e08b3f8525efe23fc556fa9b6cb75ad2b987a612fce3e9"
+  "https://tfs-observer-telegram-bot.herokuapp.com/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
 );
 
 expressApp.get("/", (req, res) => res.send("Hello World!"));
 expressApp.use(
   bot.webhookCallback(
-    "/telegraf/07e4f521f4a38e9e50e08b3f8525efe23fc556fa9b6cb75ad2b987a612fce3e9"
+    "/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
   )
 );
 
