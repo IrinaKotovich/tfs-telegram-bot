@@ -7,16 +7,14 @@ let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
 
 const bot = new Telegraf(BOT_TOKEN);
 const expressApp = express();
-bot.start(ctx => ctx.reply("Привет!"));
 
 bot.launch({
-  webhook: {
+ /* webhook: {
     domain: "https://tfs-telegrem-bot.herokuapp.com/",
     port: process.env.PORT
-  }
+  }*/
 });
 bot.start(ctx => {
-
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"
   );
