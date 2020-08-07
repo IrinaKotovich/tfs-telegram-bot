@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e2b2e282-8c13-4d5a-8e6b-9a546b8e8360" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,28 +23,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="13" />
           <entry key="json" value="25" />
-          <entry key="txt" value="82" />
+          <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="25" />
           <entry key="JavaScript" value="13" />
-          <entry key="PLAIN_TEXT" value="82" />
+          <entry key="PLAIN_TEXT" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -69,8 +68,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="340">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="72" column="3" lean-forward="true" selection-start-line="18" selection-end-line="72" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -122,6 +130,17 @@
             <path>
               <item name="tfs-telegrm-bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="tfs-telegrm-bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfs-telegrm-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfs-telegrm-bot" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfs-telegrm-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfs-telegrm-bot" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="telegraf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,7 +210,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596628976469</updated>
-      <workItem from="1596628977815" duration="9664000" />
+      <workItem from="1596628977815" duration="14188000" />
     </task>
     <task id="LOCAL-00001" summary="исправление токена">
       <created>1596632927093</created>
@@ -235,27 +254,41 @@
       <option name="project" value="LOCAL" />
       <updated>1596694230645</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="правик">
+      <created>1596695577570</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596695577570</updated>
+    </task>
+    <task id="LOCAL-00008" summary="правик">
+      <created>1596800482628</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596800482628</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9664000" />
+    <option name="totallyTimeSpent" value="14188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="npm" sideWeight="0.27184466" side_tool="true" visible="true" weight="0.24762908" />
+      <window_info id="npm" sideWeight="0.27184466" side_tool="true" visible="true" weight="0.24762908" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7281553" visible="true" weight="0.24762908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7281553" visible="true" weight="0.24762908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,7 +310,8 @@
     <MESSAGE value="убрала строчку с ошибкой" />
     <MESSAGE value="исправления" />
     <MESSAGE value="Добавила port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила port" />
+    <MESSAGE value="правик" />
+    <option name="LAST_COMMIT_MESSAGE" value="правик" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package-lock.json">
@@ -290,10 +324,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="72" column="3" lean-forward="true" selection-start-line="18" selection-end-line="72" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
