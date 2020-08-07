@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2b2e282-8c13-4d5a-8e6b-9a546b8e8360" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +36,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="34" />
+          <entry key="js" value="38" />
           <entry key="json" value="25" />
           <entry key="txt" value="88" />
         </counts>
@@ -43,7 +44,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="34" />
+          <entry key="JavaScript" value="38" />
           <entry key="PLAIN_TEXT" value="88" />
         </counts>
       </usages-collector>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="493">
+              <caret line="59" column="80" lean-forward="true" selection-start-line="59" selection-start-column="80" selection-end-line="59" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -205,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596628976469</updated>
-      <workItem from="1596628977815" duration="17456000" />
+      <workItem from="1596628977815" duration="18734000" />
     </task>
     <task id="LOCAL-00001" summary="исправление токена">
       <created>1596632927093</created>
@@ -305,11 +306,32 @@
       <option name="project" value="LOCAL" />
       <updated>1596804505891</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="правик">
+      <created>1596804846933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596804846933</updated>
+    </task>
+    <task id="LOCAL-00016" summary="правик">
+      <created>1596804925899</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596804925899</updated>
+    </task>
+    <task id="LOCAL-00017" summary="правик">
+      <created>1596805050470</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596805050470</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17456000" />
+    <option name="totallyTimeSpent" value="18734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -370,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="493">
+          <caret line="59" column="80" lean-forward="true" selection-start-line="59" selection-start-column="80" selection-end-line="59" selection-end-column="80" />
         </state>
       </provider>
     </entry>
