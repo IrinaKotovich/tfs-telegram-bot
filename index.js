@@ -1,4 +1,4 @@
-const { Telegraf } = require("telegraf");
+const Telegraf = require("telegraf");
 const Telegram = require("telegraf/telegram");
 const express = require("express");
 
