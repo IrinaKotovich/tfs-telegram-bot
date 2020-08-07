@@ -1,10 +1,10 @@
 const Telegraf = require("telegraf");
-const Telegram = require("telegraf/telegram");
+
 const express = require("express");
 
 const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
 let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
-const telegram = new Telegram(BOT_TOKEN);
+
 
 const bot = new Telegraf(BOT_TOKEN, {
   // Telegram options
@@ -43,7 +43,7 @@ bot.on("text", async function(ctx) {
 
   try {
     chatsToNotify.forEach(async chatId => {
-      await telegram.sendMessage(chatId, `HTML:${html}`, {
+      await bot.telegram.sendMessage(chatId, `HTML:${html}`, {
         parse_mode: "HTML"
       });
     });
