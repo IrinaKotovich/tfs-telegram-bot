@@ -5,15 +5,13 @@ const express = require("express");
 const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
 let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
 
-const bot = new Telegraf(BOT_TOKEN);
+const bot = new Telegraf(BOT_TOKEN, {
+  // Telegram options
+  agent: null, // https.Agent instance, allows custom proxy, certificate, keep alive, etc.
+  webhookReply: false // Reply via webhook
+});
 const expressApp = express();
 
-bot.launch({
- /* webhook: {
-    domain: "https://tfs-telegrem-bot.herokuapp.com/",
-    port: process.env.PORT
-  }*/
-});
 bot.start(ctx => {
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"

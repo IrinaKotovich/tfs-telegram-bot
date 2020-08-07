@@ -66,20 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" selection-start-line="11" selection-start-column="1" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="-464">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -93,6 +93,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/index.js" />
         <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
@@ -200,7 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596628976469</updated>
-      <workItem from="1596628977815" duration="15467000" />
+      <workItem from="1596628977815" duration="16491000" />
     </task>
     <task id="LOCAL-00001" summary="исправление токена">
       <created>1596632927093</created>
@@ -272,11 +273,25 @@
       <option name="project" value="LOCAL" />
       <updated>1596801261902</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="правик">
+      <created>1596802161933</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596802161933</updated>
+    </task>
+    <task id="LOCAL-00012" summary="правик">
+      <created>1596802517664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596802517664</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15467000" />
+    <option name="totallyTimeSpent" value="16491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -328,17 +343,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="11" selection-start-column="1" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="-464">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
