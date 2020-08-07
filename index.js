@@ -36,7 +36,6 @@ bot.on("text", async function(ctx) {
     return;
   }
 
-  console.log("ctx", ctx);
   console.log("ctx.update", ctx.update);
 
   try {
