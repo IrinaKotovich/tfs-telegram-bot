@@ -1,6 +1,12 @@
 const Telegraf = require("telegraf");
+const express = require("express");
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+
+const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
+let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
+
+const bot = new Telegraf(BOT_TOKEN);
+const expressApp = express();
 bot.start(ctx => ctx.reply("Привет!"));
 
 bot.launch({
@@ -10,7 +16,6 @@ bot.launch({
   }
 });
 bot.start(ctx => {
-  console.log("default chats to notify:", chatsToNotify);
 
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"
@@ -41,7 +46,7 @@ bot.on("text", async function(ctx) {
 
   try {
     chatsToNotify.forEach(async chatId => {
-      await telegram.sendMessage(chatId, `HTML:${html}`, {
+      await bot.telegram.sendMessage(chatId, `HTML:${html}`, {
         parse_mode: "HTML"
       });
     });
