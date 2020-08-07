@@ -1,10 +1,8 @@
 const Telegraf = require("telegraf");
-
 const express = require("express");
 
 const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
 let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
-
 
 const bot = new Telegraf(BOT_TOKEN, {
   // Telegram options
