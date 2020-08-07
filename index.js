@@ -1,4 +1,4 @@
-const Telegraf = require("telegraf");
+const { Telegraf } = require("telegraf");
 const express = require("express");
 
 const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
