@@ -5,11 +5,11 @@ const { BOT_TOKEN, PORT, DEFAULT_CHAT_IDS } = process.env;
 let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
 const expressApp = express();
 
-const bot = new Telegraf(BOT_TOKEN, {
+const bot = new Telegraf(BOT_TOKEN/*, {
   // Telegram options
   agent: null, // https.Agent instance, allows custom proxy, certificate, keep alive, etc.
   webhookReply: false // Reply via webhook
-});
+}*/);
 
 bot.start(ctx => {
   console.log("ctx", ctx);
