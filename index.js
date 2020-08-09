@@ -76,4 +76,4 @@ bot.on("text", async function(ctx) {
 
 
 
-//bot.launch();
+bot.launch();
