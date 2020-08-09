@@ -10,12 +10,19 @@ const bot = new Telegraf(BOT_TOKEN, {
   webhookReply: false // Reply via webhook
 });
 const expressApp = express();
+bot.catch((err, ctx) => {
+  console.log(`Ooops, encountered an error for ${ctx.updateType}`, err)
+});
+bot.start((ctx) => {
+  throw new Error('Example error')
+});
 
-bot.start(ctx => {
+
+/*bot.start(ctx => {
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"
   );
-});
+});*/
 
 bot.command("/subscribe", ctx => {
   console.log("ctx", ctx);
