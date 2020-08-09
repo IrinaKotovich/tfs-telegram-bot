@@ -1,8 +1,8 @@
-const Telegraf = require("telegraf");
+const { Telegraf } = require("telegraf");
 const express = require("express");
 
-const { BOT_TOKEN, PORT } = process.env;
-let chatsToNotify = [];
+const { BOT_TOKEN, PORT, DEFAULT_CHAT_IDS } = process.env;
+let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
 const expressApp = express();
 
 const bot = new Telegraf(BOT_TOKEN, {
