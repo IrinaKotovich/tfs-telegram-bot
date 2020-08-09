@@ -69,9 +69,4 @@ expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });*/
 
-/*bot.launch({
-  webhook: {
-    domain: "https://tfs-telegram-bot.herokuapp.com",
-    port: PORT
-  }
-});*/
+bot.launch();
