@@ -1,8 +1,8 @@
 const { Telegraf } = require("telegraf");
 const express = require("express");
 
-const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
-let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
+const { BOT_TOKEN, PORT } = process.env;
+let chatsToNotify = [];
 
 const bot = new Telegraf(BOT_TOKEN, {
   // Telegram options
@@ -25,8 +25,8 @@ bot.command("/subscribe", ctx => {
 
   if (!chatsToNotify.includes(chatId)) {
     chatsToNotify.push(chatId);
-  }
-  ctx.reply("Вы успешно подписались");
+    ctx.reply("Вы успешно подписались");
+  } else ctx.reply("Вы уже подписаны");
 });
 
 bot.on("text", async function(ctx) {
