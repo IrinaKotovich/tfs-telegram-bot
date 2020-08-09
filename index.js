@@ -12,6 +12,7 @@ const bot = new Telegraf(BOT_TOKEN, {
 const expressApp = express();
 
 bot.start(ctx => {
+  console.log("ctx", ctx);
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"
   );
