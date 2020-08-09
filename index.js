@@ -1,8 +1,7 @@
 const { Telegraf } = require("telegraf");
 const express = require("express");
 
-const { PORT } = process.env;
-const BOT_TOKEN = "1357725217:AAH0zcxDiZBlsO6wbu2tiUa9SWbqISL9lIc";
+const { BOT_TOKEN, PORT } = process.env;
 let chatsToNotify = [];
 const expressApp = express();
 
