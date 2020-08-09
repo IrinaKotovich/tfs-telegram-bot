@@ -68,11 +68,6 @@ expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
 
-bot.startWebhook(
-  "/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322",
-  null,
-  PORT
-);
 
 
 
