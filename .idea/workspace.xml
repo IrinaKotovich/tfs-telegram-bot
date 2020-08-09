@@ -38,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="72" />
+          <entry key="js" value="74" />
           <entry key="json" value="25" />
           <entry key="txt" value="88" />
         </counts>
@@ -46,7 +46,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="72" />
+          <entry key="JavaScript" value="74" />
           <entry key="PLAIN_TEXT" value="88" />
         </counts>
       </usages-collector>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="1010">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="204">
+              <caret line="12" column="37" lean-forward="true" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -209,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596628976469</updated>
       <workItem from="1596628977815" duration="20137000" />
-      <workItem from="1596952387800" duration="2868000" />
+      <workItem from="1596952387800" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="исправление токена">
       <created>1596632927093</created>
@@ -372,17 +372,31 @@
       <option name="project" value="LOCAL" />
       <updated>1596955590720</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="правик">
+      <created>1596956225172</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596956225172</updated>
+    </task>
+    <task id="LOCAL-00025" summary="правик">
+      <created>1596956387178</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1596956387178</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23005000" />
+    <option name="totallyTimeSpent" value="23634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72776574" visible="true" weight="0.24762908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72776574" visible="true" weight="0.24762908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.27223426" side_tool="true" visible="true" weight="0.24762908" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -430,15 +444,15 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="12" column="37" lean-forward="true" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="1010">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,13 @@
 const { Telegraf } = require("telegraf");
+const Telegram = require("telegraf/telegram");
 const express = require("express");
 
-const { BOT_TOKEN, PORT } = process.env;
-let chatsToNotify = [];
+const { BOT_TOKEN, DEFAULT_CHAT_IDS, PORT } = process.env;
+
+const telegram = new Telegram(BOT_TOKEN);
+
+let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
+
 const expressApp = express();
 
 const bot = new Telegraf(BOT_TOKEN, {
@@ -11,9 +16,9 @@ const bot = new Telegraf(BOT_TOKEN, {
   webhookReply: false // Reply via webhook
 });
 
-
 bot.start(ctx => {
-  console.log("ctx", ctx);
+  console.log("default chats to notify:", chatsToNotify);
+
   ctx.reply(
     "Используйте команду /subscribe, чтобы подписаться на уведомление об изменениях"
   );
@@ -27,22 +32,23 @@ bot.command("/subscribe", ctx => {
 
   if (!chatsToNotify.includes(chatId)) {
     chatsToNotify.push(chatId);
-    ctx.reply("Вы успешно подписались");
-  } else ctx.reply("Вы уже подписаны");
+  }
+  ctx.reply("Вы успешно подписались");
 });
 
 bot.on("text", async function(ctx) {
   const { publisherId, message: { text, html } = {}, resource: { url } = {} } =
-    ctx.update || {};
+  ctx.update || {};
   if (publisherId !== "tfs") {
     return;
   }
 
+  console.log("ctx", ctx);
   console.log("ctx.update", ctx.update);
 
   try {
     chatsToNotify.forEach(async chatId => {
-      await bot.telegram.sendMessage(chatId, `HTML:${html}`, {
+      await telegram.sendMessage(chatId, `HTML:${html}`, {
         parse_mode: "HTML"
       });
     });
@@ -65,3 +71,4 @@ expressApp.use(
 expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
+
