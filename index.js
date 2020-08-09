@@ -1,4 +1,4 @@
-const { Telegraf } = require("telegraf");
+const Telegraf = require("telegraf");
 const express = require("express");
 
 const { BOT_TOKEN, PORT } = process.env;
@@ -49,16 +49,16 @@ bot.on("text", async function(ctx) {
   }
 });
 
-bot.startWebhook(
+/*bot.startWebhook(
   "/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322",
   null,
   PORT
-);
+);*/
 bot.telegram.setWebhook(
   "https://tfs-telegram-bot.herokuapp.com/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
 );
 
-/*expressApp.get("/", (req, res) => res.send("Hello World!"));
+expressApp.get("/", (req, res) => res.send("Hello World!"));
 expressApp.use(
   bot.webhookCallback(
     "/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
@@ -67,11 +67,11 @@ expressApp.use(
 
 expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
-});*/
+});
 
-bot.launch({
+bot.launch(/*{
   webhook: {
     domain: "https://tfs-telegram-bot.herokuapp.com",
     port: PORT
   }
-});
+}*/);
