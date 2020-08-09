@@ -72,4 +72,4 @@ expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
 
-bot.launch();
+//bot.launch();
