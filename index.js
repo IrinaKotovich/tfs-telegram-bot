@@ -3,13 +3,14 @@ const express = require("express");
 
 const { BOT_TOKEN, PORT } = process.env;
 let chatsToNotify = [];
+const expressApp = express();
 
 const bot = new Telegraf(BOT_TOKEN, {
   // Telegram options
   agent: null, // https.Agent instance, allows custom proxy, certificate, keep alive, etc.
   webhookReply: false // Reply via webhook
 });
-const expressApp = express();
+
 
 bot.start(ctx => {
   console.log("ctx", ctx);
