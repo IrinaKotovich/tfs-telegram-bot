@@ -53,7 +53,7 @@ bot.on("text", async function(ctx) {
 });
 
 bot.telegram.setWebhook(
-  "https://tfs-telegram-bot.herokuapp.com/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
+  "https://tfs-telegrem-bot.herokuapp.com/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
 );
 
 expressApp.get("/", (req, res) => res.send("Hello World!"));
