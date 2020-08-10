@@ -16,8 +16,6 @@ bot.start(ctx => {
 bot.command("/subscribe", ctx => {
   const { id: chatId } = ctx.chat || {};
 
-  console.log("new chatId:", chatId);
-
   if (!chatsToNotify.includes(chatId)) {
     chatsToNotify.push(chatId);
     ctx.reply("Вы успешно подписались");
