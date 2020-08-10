@@ -23,6 +23,7 @@ bot.command("/subscribe", ctx => {
   const { id: chatId } = ctx.chat || {};
 
   console.log("new chatId:", chatId);
+  console.log("chatsToNotify:", chatsToNotify);
 
   if (!chatsToNotify.includes(chatId)) {
     chatsToNotify.push(chatId);
@@ -56,7 +57,6 @@ bot.telegram.setWebhook(
   "https://tfs-telegrem-bot.herokuapp.com/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
 );
 
-expressApp.get("/", (req, res) => res.send("Hello World!"));
 expressApp.use(
   bot.webhookCallback(
     "/telegraf/7a2548463a4cafdb30128c2d72de871026a25c2ed0b491496a1366f071e96322"
@@ -68,7 +68,3 @@ expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
 
-
-
-
-//bot.launch();
