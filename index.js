@@ -2,16 +2,10 @@ const { Telegraf } = require("telegraf");
 const express = require("express");
 
 const { BOT_TOKEN, PORT, DEFAULT_CHAT_IDS } = process.env;
-let chatsToNotify = DEFAULT_CHAT_IDS ? [...DEFAULT_CHAT_IDS.split(",")] : [];
+let chatsToNotify = DEFAULT_CHAT_IDS ? [+DEFAULT_CHAT_IDS] : [];
 const expressApp = express();
 
-const bot = new Telegraf(BOT_TOKEN, {
-  // Telegram options
-  agent: null, // https.Agent instance, allows custom proxy, certificate, keep alive, etc.
-  webhookReply: false // Reply via webhook
-});
-
-
+const bot = new Telegraf(BOT_TOKEN);
 
 bot.start(ctx => {
   ctx.reply(
@@ -23,15 +17,12 @@ bot.command("/subscribe", ctx => {
   const { id: chatId } = ctx.chat || {};
 
   console.log("new chatId:", chatId);
-  console.log("chatsToNotify:", chatsToNotify);
 
-  if (!chatsToNotify.includes(chatId) && !chatsToNotify.includes(String(chatId))) {
+  if (!chatsToNotify.includes(chatId)) {
     chatsToNotify.push(chatId);
     ctx.reply("Вы успешно подписались");
   } else ctx.reply("Вы уже подписаны");
 });
-
-
 
 bot.on("text", async function(ctx) {
   const { publisherId, message: { text, html } = {}, resource: { url } = {} } =
@@ -44,7 +35,7 @@ bot.on("text", async function(ctx) {
 
   try {
     chatsToNotify.forEach(async chatId => {
-      await bot.telegram.sendMessage(chatId, `HTML:${html}`, {
+      await bot.telegram.sendMessage(chatId, html, {
         parse_mode: "HTML"
       });
     });
@@ -63,8 +54,6 @@ expressApp.use(
   )
 );
 
-
 expressApp.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
-
