@@ -25,7 +25,7 @@ bot.command("/subscribe", ctx => {
   console.log("new chatId:", chatId);
   console.log("chatsToNotify:", chatsToNotify);
 
-  if (!chatsToNotify.includes(chatId)) {
+  if (!chatsToNotify.includes(chatId) && !chatsToNotify.includes(String(chatId))) {
     chatsToNotify.push(chatId);
     ctx.reply("Вы успешно подписались");
   } else ctx.reply("Вы уже подписаны");
